@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="/images/login.jpeg">
+
+</head>
+<body>
+    
+    </div>
+    
+    <div class="box1" id="box1">
+        <h3><u>Login</u></h3>
+
+        <div class="menu1">
+
+            <input id="username" type="text" placeholder="username"><br>
+            <p id="msg"></p>
+            <input id="pass" type="password" placeholder="password" maxlength="8"><br>
+              <p id="valid"></p>
+              <i><a href="#">forgotten password?</a></i>
+              <div class="button">
+                <button type="button" id="button1" onclick="openlogin()"  >Login</button> 
+        <button type="button" id="button1" onclick="opendisplay()" >submit </button> 
+
+              </div>
+        
+            <b>Not a Member ? <i><a href="signup.html">REGISTER NOW</a></i></b>
+
+        </div>
+    </div>
+
+    <div class="display" id="display">
+        <img src="/images/tick.jpeg" alt="">
+        <h2>Thank You</h2>
+        <h4>Your deatails have been submitted successfully.Thanks!</h4>
+        <button type="button" class="but" onclick="closedisplay()">Ok</button>
+    </div>
+
+    <script src="login.js"></script>
+    
+</body>
+</html>
