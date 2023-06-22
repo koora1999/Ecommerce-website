@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+<link rel="stylesheet" href="accordian.css">
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #bedfe8;
+    
+}
+.accordion{
+    max-width: 600px;
+}
+.accordion.contentBx{
+    
+    position:relative;
+  margin: 10px 20px;
+}
+.accordion .contentBx .label{
+    position:relative;
+    background-color: #2695af;
+    padding:10px;
+    color:#fff;
+    cursor: pointer;
+}
+.accordion .contentBx .content{
+   transition: 0.5s;
+   overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    height:0;
+    overflow-y: auto;
+   padding:1px;
+
+}
+.accordion .contentBx .label::before{
+    content:'+';
+    position:absolute;
+    transform: translateY(-50%);
+    top:50%;
+    right:20px;
+    font-size: 1.5em;
+
+}
+.accordion .contentBx.active .content {
+    height:150px;
+    padding:20px;
+}
+.accordion .contentBx.active  .label::before{
+    content:'-'
+}
+</style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">What is Javascript?</div>
+            <div class="content">
+                <p>
+                    JavaScript frameworks are an essential part of modern front-end web development,
+                     providing developers with proven tools for building scalable, interactive web applications. 
+                     This module gives you some fundamental background knowledge about how client-side frameworks work and how they fit into your toolset,
+                      before moving on to a series of tutorials covering some of today's most popular ones.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">What is CSS?</div>
+            <div class="content">
+                <p>
+                    CSS is a rule-based language — you define the rules by specifying groups of styles that should
+                     be applied to particular elements or groups of elements on your web page.
+                    For example, you can decide to have the main heading on your page to be shown as large red text.
+                     The following code shows a very simple CSS rule that would achieve the styling described above:
+                </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">What is HTML?</div>
+            <div class="content">
+                <p>
+                    HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose,
+                     or wrap, different parts of the content to make it appear a certain way, or act a certain way.
+                    Images. Let's turn our attention to the element again: As we said before, it embeds an image into our page in the position it appears.
+                    Marking up text. This section will cover some essential HTML elements you'll use for marking up the text. Headings.
+                     Heading elements allow you to specify that certain parts of your content are headings — or subheadings.
+                   
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+       const contentbx = document.getElementsByClassName("contentBx")
+       for(let i=0;i<contentbx.length;i++){
+        contentbx[i].addEventListener('click',function(){
+            this.classList.toggle('active')
+        })
+       }
+    </script>
+</body>
+</html>
