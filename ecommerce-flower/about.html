@@ -159,61 +159,7 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-        const arrowleft = document.getElementById("arrowleft")
-
-        const arrowright = document.getElementById("arrowright")
-
-        const slider = document.getElementById("slider")
-
-        let a = 0;
-        arrowright.style.visibility="hidden";
-        
-
-
-        arrowleft.onclick = function () {
-            a = a - 550;
-            slider.style.left = a + "px";
-            //rightarrow
-            if( a == 0){
-                arrowright.style.visibility="hidden";
-            }
-            else{
-                arrowright.style.visibility="visible";
-            }
-            //leftarrow
-            if( a == -1650){
-                arrowleft.style.visibility="hidden";
-            }
-            else{
-                arrowleft.style.visibility="visible";
-            }
-
-
-        };
-
-
-        arrowright.onclick = function () {
-            a = a + 550;
-            slider.style.left = a + "px";
-            //rightarrow
-            if( a == 0){
-                arrowright.style.visibility="hidden";
-            }
-            else{
-                arrowright.style.visibility="visible";
-            }
-            //leftarrow
-            if( a == -1650){
-                arrowleft.style.visibility="hidden";
-            }
-            else{
-                arrowleft.style.visibility="visible";
-            }
-        };
-
-        
-    </script>
+    
 </body>
 
 </html>
