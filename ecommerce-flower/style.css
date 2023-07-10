@@ -381,7 +381,7 @@ body {
     border: 0;
     padding: 10px 40px 10px 40px;
     background-size: cover;
-    border-radius: ;
+    
     font-size: 20px;
     font-weight: 900;
     cursor: pointer;
@@ -1743,7 +1743,7 @@ footer a:hover {
     background-color: #088178;
     color: white;
 }
-
+nn
 #form-details .people div img {
 
     width: 65px;
