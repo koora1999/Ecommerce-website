@@ -22,22 +22,22 @@ let updateTimer;
 
 const music_list = [
     {
-        img : '/images/sriram.jpg',
+        img : 'https://i.ibb.co/4W8KyTr/sriram.jpg',
         name : 'Priya Mithunam',
         
         music : '/images/Priya Mithunam.mp3'
     },
     {
-        img : '/images/sriram.jpg',
+        img : 'https://i.ibb.co/4W8KyTr/sriram.jpg',
         name : 'Jai Shriram',
         
-        music : '/images/Jai shriram.mp3'
+        music : '/images/Jai Shriram.mp3'
     },
     {
-        img : '/images/sriram.jpg',
+        img : 'https://i.ibb.co/4W8KyTr/sriram.jpg',
         name : 'Huppa Huiya',
         
-        music : '/images/Huppa Huiya.mp3'
+        music : '/images/Huppa huiya.mp3'
     },
     
 ];
